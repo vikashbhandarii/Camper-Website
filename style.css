@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Images/alex-turcu-aEXyyX3VCMg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#page1bg {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 25%;
+}
+
+#navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+    color: #fff;
+    position: fixed;
+    z-index: 1;
+    font-size: 2vh;
+}
+
+#nav-link a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1.6vw;
+    padding: 0.5vw 0.7vw;
+    font-size: 2.1vh;
+}
+
+#nav-link a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#icons i {
+    padding: 0.5vw;
+    margin: 0.5vw;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#icons .menu-i {
+    display: none;
+}
+
+#icons i:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#about-us {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    background-color: #01203c;
+}
+
+#about-page-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#about-page-bg h1 {
+    font-size: 5vh;
+    margin-bottom: 15px;
+}
+
+#about-page-bg p {
+    font-size: 2.7vh;
+}
+
+#center-head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    line-height: 200%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3.2vh;
+}
+
+#center-head .btn {
+    display: flex;
+    justify-content: center;
+}
+
+#center-head .btn button {
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px;
+    cursor: pointer;
+}
+
+#page2 {
+    background-color: #01203c;
+    width: 100%;
+    padding: 6vw;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 5vw;
+}
+
+.card img {
+    width: 25vw;
+    height: 25vh;
+    border-radius: 10px;
+    ;
+    box-shadow: 5px 5px 50px #000;
+}
+
+.card .text {
+    font-size: 2vh;
+    width: 95%;
+    padding: 0 5px;
+}
+
+.card .card-img {
+    width: 40%;
+    padding: 0 60px;
+}
+
+.card h5 {
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    width: 90%;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    opacity: 80%;
+}
+
+#card2 .text {
+    padding-left: 90px;
+    width: 100%;
+}
+
+#card2 .text p {
+    width: 90%;
+}
+
+#card2>.card-img {
+    padding-left: 5px;
+}
+
+.text a {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#page2-bottom {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    color: #fff;
+}
+
+#btmleft {
+    width: 55%;
+    font-size: 2vh;
+    line-height: 4.5vh;
+}
+
+#btmleft>button {
+    font-size: 2vh;
+    padding: 7px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 55%;
+    cursor: pointer;
+}
+
+#btmright {
+    margin-top: 30px;
+    width: 95%;
+    font-size: 2.2vh;
+}
+
+#btmright p {
+    line-height: 1.3;
+    padding-left: 8vw;
+    margin-bottom: 9px;
+    width: 90%;
+}
+
+#page3 {
+    width: 100%;
+    padding: 1px;
+    background-color: #01203c;
+    color: #fff;
+}
+
+#page3 #choose-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 40px; */
+}
+
+#page3 #choose-us #up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#page3 #choose-us #up>h1 {
+    margin-bottom: 20px;
+    font-size: 4vh;
+}
+
+#page3 #choose-us #up>p {
+    width: 50%;
+    font-size: 2.2vh;
+}
+
+#page3 #choose-us #down {
+    display: flex;
+    margin: 40px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 #choose-us #down .dcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#page3 #choose-us #down .dcard i {
+    font-size: 80px;
+}
+
+#page3 #choose-us #down .dcard h1 {
+    margin: 10px;
+}
+
+#page3 #choose-us #down .dcard h3 {
+    margin-bottom: 10px;
+}
+
+#page3 #choose-us #down .dcard p {
+    width: 70%;
+}
+
+#page4 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #01203c;
+}
+
+#page4 #banner {
+    width: 100%;
+    height: 35vh;
+    background-image: url(/Images/alex-turcu-aEXyyX3VCMg-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+
+#page4 #banner #overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    opacity: 20%;
+}
+
+#page4 #banner #more {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#page4 #banner #more h3 {
+    margin-bottom: 20px;
+}
+
+#page4 #banner #more>p {
+    margin-top: 0px;
+    width: 100%;
+    font-size: 2vh;
+}
+
+#page4 #banner #more button {
+    outline: none;
+    border: none;
+    font-size: 1.5vh;
+    padding: 10px 35px;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: rgb(241, 241, 80);
+}
+
+#footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #011a2f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer #foot-top {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+}
+
+#footer #foot-left {
+    border-right: 1px solid #fff;
+    width: 50%;
+    height: 50%;
+    text-align: right;
+    padding: 14px 25px;
+}
+
+#footer #foot-right {
+    width: 50%;
+    text-align: left;
+    padding: 0 25px;
+}
+
+#footer #foot-right p {
+    padding-top: 10px;
+}
+
+#footer #foot-right i {
+    padding-right: 7px;
+}
+
+#footer #foot-bottom {
+    width: 100%;
+    border-top: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    #icons i {
+        display: none;
+    }
+
+    #icons .menu-i {
+        display: block;
+        padding: 0;
+    }
+
+    #nav-link a {
+        display: none;
+    }
+
+    #center-head {
+        font-size: 2.4vh;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card .text {
+        width: 95%;
+        padding-left: 20px;
+    }
+
+    .card img {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .card .card-img {
+        width: 100%;
+        padding: 50px 25px 20px 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #card2 {
+        flex-direction: column-reverse;
+    }
+
+    #card2 .text {
+        padding-left: 25px;
+        width: 100%;
+    }
+
+    #page2-bottom {
+        flex-direction: column;
+        margin: 20px 0px 0px 0px;
+        padding: 0px 5px;
+    }
+
+    #btmleft {
+        width: 85%;
+    }
+
+    #btmleft>button {
+        width: 95%;
+    }
+
+    #btmright {
+        margin-top: 30px;
+        width: 95%;
+        padding-left: 17px;
+    }
+
+    #btmright p {
+        padding-left: 0;
+    }
+
+    #page3 #choose-us {
+        margin: 40px;
+    }
+
+    #page3 #choose-us #up>p {
+        width: 100%;
+    }
+
+    #page3 #choose-us #down {
+        flex-direction: column;
+        margin: 40px 0px 0px 0px;
+    }
+
+    #page3 #choose-us #down .dcard {
+        margin-bottom: 30px;
+    }
+
+    #page3 #choose-us #down .dcard p {
+        width: 90%;
+    }
+
+    #page4 #banner #more h3 {
+        margin-bottom: 10px;
+    }
+
+    #page4 #banner #more>p {
+        margin-top: 0px;
+        width: 100%;
+        font-size: 1.7vh;
+    }
+
+    #page4 #banner #more button {
+        font-size: 7px;
+        padding: 5px 15px;
+        border-radius: 2px;
+        margin-top: 10px;
+    }
+
+    #footer {
+        height: 25vh;
+    }
+
+    #footer #foot-top {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    #footer #foot-left {
+        border: none;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    #footer #foot-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer #foot-bottom {
+        padding: 5px;
+    }
+}
